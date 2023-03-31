@@ -72,7 +72,7 @@ body {
 .opção-prato1 {
     width: 172px;
     height: 216px;
-    padding: 14px 15px ;
+    padding: 9px 15px ;
     background-color: #FFFFFF;
     margin-top: auto;
     border-radius: 9px;
@@ -148,4 +148,14 @@ body {
 .scroll {
     -ms-overflow-style: none;  
     scrollbar-width: none;  
+}
+
+.marcado1 {
+    border: 2px solid green;
+}
+.marcado2 {
+    border: 2px solid green;
+}
+.marcado3 {
+    border: 2px solid green;
 }
