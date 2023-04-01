@@ -84,6 +84,9 @@ body {
 
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
+.opção-prato1:hover {
+    cursor:pointer;
+}
 .opção-prato1 img {
     width: 144px;
     height: 87px;
@@ -148,4 +151,21 @@ body {
 .scroll {
     -ms-overflow-style: none;  
     scrollbar-width: none;  
+}
+
+.marcado1 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+.marcado2 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+.marcado3 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.final-pronto { 
+    background: #32B72F;
+}
+.final-pronto:hover {
+    cursor:pointer;
 }
