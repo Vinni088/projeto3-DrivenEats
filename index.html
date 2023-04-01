@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap" >
     <link rel="stylesheet" href="Reset.css">
     <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="menus.css">
 
 </head>
 <body>
@@ -78,17 +79,29 @@
             </div>
             <div onclick="marque3(this);" class="opção-prato1">
                 <img src="https://portaledicase.com/wp-content/uploads/2022/11/Torta-de-limao-shutterstock.jpg" alt="">
-                <h1>Torta de Limão</h1>
+                <h1>Tortinha</h1>
                 <h2>Mais doce que azedo!</h2>
                 <h3>R$ 5,00</h3>
             </div>
         </div>
     </div>
     <div class="rodape">
-        <button class="finalizar-pedido" disabled> Selecione os 3 itens
+        <button onclick="confirmação()" class="finalizar-pedido" disabled> Selecione os 3 itens
             para fechar o pedido</button>
     </div>
-
+    <div class="Finalizar-mesmo escondido ">
+        <div class="absolute">
+            <h1>Confirme seu Pedido</h1>
+                <p class="dish-nome">a </p>
+                <p class="dish-preco">b </p>
+                <p class="drink-nome">c </p>
+                <p class="drink-preco">d </p>
+                <p class="desert-nome">e </p>
+                <p class="desert-preco"> f </p>
+            <button class="enviar-pedido">Tudo certo, pode pedir!</button>
+            <h2 class="voltar-pedido">Cancelar</h2>
+        </div>
+    </div>
 
     <script
      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">

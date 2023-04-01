@@ -38,3 +38,42 @@ function check() {
     finalizador.innerHTML  = "Fechar Pedido";
     }
 }
+
+function confirmação() {
+    const menuconfirmação = document.querySelector('.Finalizar-mesmo');
+    menuconfirmação.classList.remove('escondido')
+    configuraMenu();
+    
+}
+
+function configuraMenu() {
+    const dishName = document.querySelector('.marcado1 h1');
+    let dish = document.querySelector('.dish-nome');
+    dish.innerHTML = dishName.innerHTML;
+
+    const dishPrice = document.querySelector('.marcado1 h3');
+    let price1 = document.querySelector('.dish-preco');
+    price1.innerHTML = dishPrice.innerHTML;
+
+    /////////////////////////////////////////////////////////////////////////////
+
+    const drinkName = document.querySelector('.marcado2 h1');
+    let drink = document.querySelector('.drink-nome');
+    drink.innerHTML = drinkName.innerHTML;
+
+    const drinkPrice = document.querySelector('.marcado2 h3');
+    let price2 = document.querySelector('.drink-preco');
+    price2.innerHTML = drinkPrice.innerHTML;
+
+    /////////////////////////////////////////////////////////////////////////////
+
+    const desertName = document.querySelector('.marcado3 h1');
+    let desert = document.querySelector('.desert-nome');
+    desert.innerHTML = desertName.innerHTML;
+
+    const desertPrice = document.querySelector('.marcado3 h3');
+    let price3 = document.querySelector('.desert-preco');
+    price3.innerHTML = dishPrice.innerHTML;
+
+    /////////////////////////////////////////////////////////////////////////////
+}
