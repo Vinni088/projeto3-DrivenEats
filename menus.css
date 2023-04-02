@@ -73,7 +73,7 @@
 }
 .desert-nome {
     position: absolute;
-    width: 76px;
+    width: 100%;
     height: 27px;
     left: 26px;
     top: 156px;
@@ -85,6 +85,38 @@
     line-height: 26px;
     letter-spacing: 0.018em;
     
+    color: #FFFFFF;
+}
+.total {
+    position: absolute;
+    width: 76px;
+    height: 27px;
+    left: 26px;
+    top: 196px;
+        
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+        
+    color: #FFFFFF;
+}
+.total-preco {
+    position: absolute;
+    width: 97px;
+    height: 27px;
+    right: 23px;
+    top: 196px;
+        
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+        
     color: #FFFFFF;
 }
 .dish-preco {
@@ -173,4 +205,10 @@
     
     color: #FFFFFF;
     
+}
+.enviar-pedido:hover {
+    cursor:pointer;
+}
+.voltar-pedido:hover {
+    cursor:pointer;
 }

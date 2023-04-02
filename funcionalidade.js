@@ -73,7 +73,35 @@ function configuraMenu() {
 
     const desertPrice = document.querySelector('.marcado3 h3');
     let price3 = document.querySelector('.desert-preco');
-    price3.innerHTML = dishPrice.innerHTML;
+    price3.innerHTML = desertPrice.innerHTML;
+
+    const str1 =dishPrice.innerHTML
+    const str2 =drinkPrice.innerHTML
+    const str3 =desertPrice.innerHTML
+    let valor1 = str1.replace(/[^0-9]/g,"");
+    let valor2 = str2.replace(/[^0-9]/g,"");
+    let valor3 = str3.replace(/[^0-9]/g,"");
+    let soma = (Number(valor1) + Number(valor2) + Number(valor3))/100;
+    let valorfinal = "R$ " + String(soma.toFixed(2));
+
+    const priceF = document.querySelector('.total-preco');
+    priceF.innerHTML = valorfinal;
+    
+    let mensagem = "Olá, gostaria de fazer o pedido: " + "\n" +
+    "- Prato: " + dishName.innerHTML + "\n" +
+    "- Bebida: " + drinkName.innerHTML + "\n" +
+    "- Sobremesa: " + desertName.innerHTML + "\n" +
+    "Total: " + valorfinal;
+    window.link = "https://wa.me/5561986796160?text=" + encodeURIComponent(mensagem);
+    
 
     /////////////////////////////////////////////////////////////////////////////
+}
+function escolherdenovo() {
+    const menuconfirmação = document.querySelector('.Finalizar-mesmo');
+    menuconfirmação.classList.toggle('escondido')
+}
+
+function encodeMsg(x) {
+    encodeURIComponent(x);
 }
