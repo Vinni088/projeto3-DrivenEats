@@ -169,3 +169,17 @@ body {
 .final-pronto:hover {
     cursor:pointer;
 }
+
+.preco-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkmark1, .checkmark2, .checkmark3, .checkmark4, .checkmark5, .checkmark6, .checkmark7, .checkmark8, .checkmark9  {
+    width: 20px;
+    height: 20px;
+    background-color: #32B72F;
+    color: #FFFFFF;
+    border-radius: 100%;
+}

@@ -4,7 +4,22 @@ function marque1(seletor) {
         //remove a classe selecionado desse botao
         botaomarcado.classList.remove('marcado1');
     }
-	seletor.classList.toggle("marcado1");
+    seletor.classList.toggle("marcado1");
+
+    let checkmarcado1 = document.querySelector('.checkmark1');
+    let checkmarcado2 = document.querySelector('.checkmark2');
+    let checkmarcado3 = document.querySelector('.checkmark3');
+    if ( checkmarcado1.classList.contains('escondido') === false || checkmarcado2.classList.contains('escondido') === false || checkmarcado3.classList.contains('escondido') === false){
+        //remove a classe selecionado desse botao
+        checkmarcado1.classList.add('escondido');
+        checkmarcado2.classList.add('escondido');
+        checkmarcado3.classList.add('escondido');
+
+    }
+
+    const checkzin = document.querySelector('.marcado1 .check');
+    checkzin.classList.remove('escondido');
+	
     check();
 }
 function marque2(seletor) {
@@ -13,7 +28,25 @@ function marque2(seletor) {
         //remove a classe selecionado desse botao
         botaomarcado.classList.remove('marcado2');
     }
-	seletor.classList.toggle("marcado2");
+    seletor.classList.toggle("marcado2");
+
+    /////////////////////////////////////////////////////////////////////////////
+
+    let checkmarcado1 = document.querySelector('.checkmark4');
+    let checkmarcado2 = document.querySelector('.checkmark5');
+    let checkmarcado3 = document.querySelector('.checkmark6');
+    if ( checkmarcado1.classList.contains('escondido') === false || checkmarcado2.classList.contains('escondido') === false || checkmarcado3.classList.contains('escondido') === false){
+        //remove a classe selecionado desse botao
+        checkmarcado1.classList.add('escondido');
+        checkmarcado2.classList.add('escondido');
+        checkmarcado3.classList.add('escondido');
+
+    }
+    const checkzin = document.querySelector('.marcado2 .check');
+    checkzin.classList.remove('escondido');
+
+	/////////////////////////////////////////////////////////////////////////////
+
     check();
 }
 function marque3(seletor) {
@@ -23,6 +56,24 @@ function marque3(seletor) {
         botaomarcado.classList.remove('marcado3');
     }
 	seletor.classList.toggle("marcado3");
+
+    /////////////////////////////////////////////////////////////////////////////
+
+    let checkmarcado1 = document.querySelector('.checkmark7');
+    let checkmarcado2 = document.querySelector('.checkmark8');
+    let checkmarcado3 = document.querySelector('.checkmark9');
+    if ( checkmarcado1.classList.contains('escondido') === false || checkmarcado2.classList.contains('escondido') === false || checkmarcado3.classList.contains('escondido') === false){
+        //remove a classe selecionado desse botao
+        checkmarcado1.classList.add('escondido');
+        checkmarcado2.classList.add('escondido');
+        checkmarcado3.classList.add('escondido');
+
+    }
+    const checkzin = document.querySelector('.marcado3 .check');
+    checkzin.classList.remove('escondido');
+
+	/////////////////////////////////////////////////////////////////////////////
+
     check();
 }
 
